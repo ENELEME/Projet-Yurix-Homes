@@ -78,3 +78,11 @@ nav{
     transform:translateY(100%);
     display:inline-block;
 }
+.titre{
+    font-size:7rem;
+    color:#3c3e3e;
+    text-align: center;
+    margin:5rem 0;
+    text-transform: uppercase;
+}
+
