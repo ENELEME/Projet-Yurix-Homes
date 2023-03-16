@@ -8,3 +8,26 @@ tl.to(".intro", { y: "-100%", duration:1 }, "-=1");
 
 tl.fromTo('nav',{opacity: 0}, {opacity:1, duration: 1 });
 tl.fromTo('.big-text',{opacity: 0}, {opacity:1, duration: 1 }, '-=1');
+
+
+// Button to up
+
+const goTopBtn = document.querySelector(".go-top-btn");
+
+window.addEventListener("scroll", checkHeight);
+
+function checkHeight(){
+    if (window.scrollY > 400) {
+        goTopBtn.style.display = "flex";
+    }
+    else{
+        goTopBtn.style.display = "none"
+    }
+};
+
+goTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth"
+    })
+})

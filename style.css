@@ -40,7 +40,7 @@ nav{
     left:50%;
     top:30%;
     transform:translate(-50%, -30%);
-    font-size:7rem;
+    font-size: calc(2rem + 5vw);
     font-family: sans-serif;
     /* color:rgb(61,61,61); */
     color:#3c3e3e;
@@ -79,10 +79,29 @@ nav{
     display:inline-block;
 }
 .titre{
-    font-size:7rem;
+    font-size: calc(1rem + 4vw);
     color:#3c3e3e;
     text-align: center;
     margin:5rem 0;
     text-transform: uppercase;
 }
+.content{
+ padding:0 10vw;
+ font-size: 20px;
+ text-align: justify;
+}
 
+.go-top-btn{
+    position:fixed;
+    bottom:35px;
+    right:35px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    display:none;
+    justify-content: center;   
+    align-items: center;
+
+}
