@@ -212,6 +212,10 @@ nav{
     color: var(--title-h3);
 }
 
+.section3{
+  height: 100vh;
+  background: #757171;
+}
 @media (max-width:768px){
   .go-top-btn{
     height: 3rem;
