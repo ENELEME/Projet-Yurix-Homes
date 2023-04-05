@@ -15,14 +15,18 @@
     --main-detail:#2d6e92;
     --title-h3: #564f4f;
 
-  
     /* Fonts */
 }
-     
-.main{
-    font-family: sans-serif; 
+
+body{
+  display:flex;
+  flex-direction: column;
 }
 
+main{
+  flex-grow:1;
+}
+     
 .landing{
     min-height: 100vh;
     background:url("./ressources/home.jpg");
@@ -212,10 +216,60 @@ nav{
     color: var(--title-h3);
 }
 
-.section3{
-  height: 100vh;
-  background: #757171;
+footer{
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background: #f1f1f1;
+  color:#333;
 }
+
+.contenu-footer{
+  width: 1400px;
+  margin: 0 auto;
+  display:flex;
+  justify-content:space-between;  
+  font-size: 20px;
+  padding: 50px 0 100px;
+ }
+
+.bloc{
+  width: 25%;
+  margin: 0 30px;
+}
+
+/* contact */
+
+.footer-contact h3,
+.footer-services h3,
+.footer-horaires h3,
+.footer-medias h3{
+  font-size: 25px;
+  padding-bottom:20px;
+}
+
+.footer-contact p{
+  padding:5px 0;
+}
+
+/* Services */
+
+.liste-services,
+.liste-horaires,
+.liste-media{
+  list-style-type: none;
+  }
+.liste-services li{
+  padding: 2px 0;
+  }
+.liste-services a{
+  text-decoration:none;
+  color:#333;
+}
+
+
+ 
+
 @media (max-width:768px){
   .go-top-btn{
     height: 3rem;
@@ -225,6 +279,24 @@ nav{
     height: 70vh;
 } 
 }; 
+
+@media screen and (max-width:1300px){
+  .contenu-footer{
+    width: 700px;
+    flex-wrap:wrap;
+ 
+  }
+  .bloc{
+    width:40%;
+    margin: 0 0;
+   
+  }
+  .bloc:nth-child(1),
+  .bloc:nth-child(2){
+    margin-bottom:50px;
+ 
+  }
+}
    
   
   
