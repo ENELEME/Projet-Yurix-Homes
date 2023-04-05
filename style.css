@@ -12,10 +12,13 @@
     --footer-color:#7EA2BA;     
     --color-detail:#047B90;
     --title-h3: #342D27;
-    --text-color:#342D27;     
+    --text-color:#342D27;   
+    --color-navigation:#0D3958;  
+    
+     /*fonts*/
+    
+    --font-text: sans serif;
 }
-
-    /* Fonts */
 
 body{
   display:flex;
@@ -39,20 +42,24 @@ nav{
  align-items: center;
  justify-content: space-between;
  min-height: 10vh; 
+ color:var(--main-black);
+ font-weight: bold;
+
 }
 .nav-links{
     display:flex;
     list-style: none;
 }
 .nav-links li{
-    padding-left:1rem;
+    padding-left:3rem;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 #logo{
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 2rem;
-}
+   }
     
 .big-text{
     position:absolute;
