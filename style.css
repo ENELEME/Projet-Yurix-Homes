@@ -5,18 +5,17 @@
 }
 :root {
     /* palette */
-    --main-white: #FAFFFD;
+    --main-white: #FDF7F7;
     --shade-white: #d3d3d3;
     --main-black: #000101;
-    --title-color:#3c4f53;
-    --dark-gris:#757171;
-    --main-green:#8bcaec;  
-    --footer-color: #6b5f8f;     
-    --main-detail:#2d6e92;
-    --title-h3: #564f4f;
+    --title-color:#7EA2BA;
+    --footer-color:#7EA2BA;     
+    --color-detail:#047B90;
+    --title-h3: #342D27;
+    --text-color:#342D27;     
+}
 
     /* Fonts */
-}
 
 body{
   display:flex;
@@ -65,12 +64,12 @@ nav{
     color:var(--main-white);
     min-width: 280px;
     text-align: center;
-    background-color:var(--title-color);
+    background-color:var(--color-detail);
     padding:1rem;
     letter-spacing: 0.2rem;
 }
 .intro{
-    background: #000;
+    background:var(--main-black);
     position:fixed;
     top:0;
     left:0;
@@ -81,7 +80,7 @@ nav{
     align-items: center;
 }
 .slider{
-    background: rgb(163, 193, 207);
+    background: var(--footer-color);
     position:fixed;
     top:0;
     left:0;
@@ -90,12 +89,12 @@ nav{
     transform:translateY(100%);
 }
 .intro-text{
-    color:rgb(223, 233, 233);
+    color:var(--shade-white);
     font-family: Heebo sans serif;
     font-size: calc(1rem + 2.5vw);
 }
 .hide{
-    background:black;
+    background:var(--main-black);
     overflow:hidden;
 }
 .hide span{
@@ -104,7 +103,7 @@ nav{
 }
 .titre{
     font-size: calc(1rem + 4vw);
-    color:#3c3e3e;
+    color:var(--title-h3);
     text-align: center;
     margin:5rem 0;
     text-transform: uppercase;
@@ -117,20 +116,20 @@ nav{
 
 .go-top-btn{
     position:fixed;
-    bottom:35px;
-    right:35px;
+    bottom:2rem;
+    right:2rem;
     border-radius: 50%;
     border-style: none;
     cursor: pointer;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     display:none;
     justify-content: center;   
     align-items: center;
 }
 .go-top-btn img{
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 /* Section 2 */
@@ -150,7 +149,7 @@ nav{
     display: grid;
     padding:30px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-    background: white;   
+    background: var(--shade-white);   
   }
   
   .slide {
@@ -188,14 +187,14 @@ nav{
     height: 2.5rem;
     border-radius: 3px;
     border: none;
-    background:var(--title-color);
+    background:var(--main-white);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bolder;
-    color:aliceblue;
+    color:var(--title-h3);
     outline:none;
   }
   .direction-btn:hover {
@@ -218,10 +217,10 @@ nav{
 
 footer{
   flex-shrink: 0;
-  border-top: 1px dashed #000;
+  border-top: 1px dashed var(--text-color);
   width: 100%;
-  background: #f1f1f1;
-  color:#333;
+  background:var(--footer-color);
+  color:var(--text-color);
 }
 
 .contenu-footer{
@@ -246,6 +245,7 @@ footer{
 .footer-medias h3{
   font-size: 25px;
   padding-bottom:20px;
+  color:var(--main-white)
 }
 
 .footer-contact p{
@@ -264,7 +264,7 @@ footer{
   }
 .liste-services a{
   text-decoration:none;
-  color:#333;
+  color:var(--text-color);
 }
 
 
